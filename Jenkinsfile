@@ -24,9 +24,7 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
                 withMaven(maven : 'Mavaen_3.8.6') {
-					echo 'Deployment printing mvn help:effective-settings'
-					#sh 'mvn help:effective-settings'
-                    #sh 'mvn deploy'
+					echo 'Deployment printing mvn help:effective-settings'					
                 }
             }
         }
